@@ -13,6 +13,7 @@ import followin from './followin'
 import duckduckgo from './duckduckgo'
 import brave from './brave'
 import arxiv from './arxiv'
+import perplexity from './perplexity'
 
 /**
  * @typedef {object} SiteConfigAction
@@ -214,5 +215,11 @@ export const config = {
     sidebarContainerQuery: ['.extra-services'],
     appendContainerQuery: [],
     resultsContainerQuery: ['.extra-services'],
+  },
+  'perplexity.ai': {
+    inputQuery: perplexity.inputQuery,
+    sidebarContainerQuery: [],
+    appendContainerQuery: [],
+    resultsContainerQuery: [],
   },
 }
